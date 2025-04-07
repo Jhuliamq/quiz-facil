@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+  }
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    background: linear-gradient(90deg, rgb(74, 162, 221) 0%, rgb(71, 58, 187) 100%);
+  }
+
+h2 {
+  color: white;
+  font-size:50px;
+}
+
+main {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1040px;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answers-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.questao-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 24px;
+}
+
+.questions{
+  font-size: 30px;
+  top: 110px;
+  font-weight: bold;
+  font-style: center;
+}
+
+.imagem01{
+  width: 350px;
+  height: 350px;
+  left: 1540px;
+  top: 540px;
+  position: absolute;
+}
+
+.imagem02{
+  width: 350px;
+  height: 380px;
+  left: 0px;
+  top: 500px;
+  position: absolute;
+}
+
+.imagem03{
+  width: 300px;
+  height: 300px;
+  left: 30px;
+  top: 100px;
+  position: absolute;
+}
+
+.imagem04{
+  width: 300px;
+  height: 300px;
+  left: 1540px;
+  top: 100px;
+  position: absolute;
+}
+
+button {
+  background-color: rgb(163, 129, 218);
+  color: black;
+  font-size: 16px;
+  font-size: 60px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 6px;
+  height: 100px;
+  width: 320px;
+  cursor: pointer;
+  padding: 0 32px ;
+
+  transition: filter 0.2s;
+  }
+
+.proxima-questao{
+  margin-top:32px ;
+}
+
+.button:not(:disabled):hover{
+  filter: brightness(0.8);
+}
+
+.hide{
+  display: none;
+}
+
+.answers:disabled{
+  cursor: not-allowed;
+}
+
+.correct{
+  background-color: green;
+}
+
+.incorrect{
+  background-color: rgb(230, 86, 86);
+  opacity: 1;
+}
+
+.mensagem_final{
+  font-size: 20px;
+  text-align: center;
+}
+
+.mensagem_final span{
+  display: block;
+  margin-top: 8px;
+}
+
+.iniciar-quiz{
+  height: 150px;
+  width: 300px;
+  font-size: 40px;
+}
